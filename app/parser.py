@@ -1,7 +1,6 @@
 import asyncio
 import pandas as pd
 import ast
-from sqlalchemy.ext.asyncio import AsyncSession
 from app.database import engine, Base, AsyncSessionLocal
 from app.models import Document
 from app.elastic import es_client, create_index, INDEX_NAME

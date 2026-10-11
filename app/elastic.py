@@ -34,7 +34,6 @@ async def create_index():
         await es_client.indices.create(index=INDEX_NAME, body=mapping)
         print(f"Индекс '{INDEX_NAME}' успешно создан.")
     except Exception as e:
-        # Если ошибка связана с тем, что индекс уже есть, это нормально
         if "resource_already_exists_exception" in str(e):
             print(f"Индекс '{INDEX_NAME}' уже существует, пропускаем создание.")
         else:
