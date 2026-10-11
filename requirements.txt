@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+sqlalchemy
+asyncpg
+elasticsearch[async]==8.11.1
+python-dotenv
+pytest
+pytest-asyncio
+httpx
+pandas
+greenlet
