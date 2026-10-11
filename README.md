@@ -15,3 +15,6 @@
 3. Запустите проект командой:
    ```bash
    docker compose up --build -d
+4. Выполните скрипт первичной загрузки данных из CSV в PostgreSQL и Elasticsearch:
+   ```bash
+   docker compose exec web python -m app.parser
